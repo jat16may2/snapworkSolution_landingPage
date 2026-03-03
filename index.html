@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Snapwork builds production-grade AI systems, scalable backends, and data infrastructure for ambitious teams." />
+  <title>Snapwork — Engineering That Scales</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav__logo" aria-label="Snapwork home">
+      <span class="nav__logo-text">Snap<span style="color:var(--accent)">work</span></span>
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+
+    <button class="nav__menu-btn" aria-label="Open menu" id="menuBtn" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#process" class="mobile-link">Process</a>
+    <a href="#results" class="mobile-link">Results</a>
+    <a href="#about" class="mobile-link">About</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" aria-labelledby="hero-headline">
+
+      <!-- Background Elements -->
+      <div class="hero__grid" aria-hidden="true">
+        <div class="hero__grid-lines"></div>
+        <div class="hero__glow"></div>
+      </div>
+      <div class="hero__accent-dot" aria-hidden="true"></div>
+      <div class="hero__accent-ring" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__content">
+
+          <!-- Status Badge -->
+          <div class="hero__badge reveal" role="status">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            <span class="hero__badge-text">Currently accepting new clients for Q2 2026</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="h1 hero__headline reveal reveal-delay-1" id="hero-headline">
+            Systems built to<br/>
+            <em>run in production,</em><br/>
+            not just demos.
+          </h1>
+
+          <!-- Subheading -->
+          <p class="body-lg hero__sub reveal reveal-delay-2">
+            We design and ship AI systems, backend infrastructure, and data pipelines
+            that engineering teams actually want to maintain. No bloat. No shortcuts.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero__actions reveal reveal-delay-3">
+            <a href="#results" class="btn btn-primary" aria-label="View Snapwork case studies">
+              View Our Work
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7H12M8 3L12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Proof -->
+          <div class="hero__social-proof reveal reveal-delay-4">
+            <p class="hero__proof-label">Trusted by engineering teams at</p>
+            <ul class="hero__logos" role="list">
+              <li class="hero__logo-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <rect width="14" height="14" rx="3" fill="currentColor" opacity="0.4"/>
+                </svg>
+                Arcturus Labs
+              </li>
+              <li class="hero__logo-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                </svg>
+                Meridian Health
+              </li>
+              <li class="hero__logo-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M7 1L13 4.5V9.5L7 13L1 9.5V4.5L7 1Z" stroke="currentColor" stroke-width="1.4" opacity="0.4"/>
+                </svg>
+                Kova Finance
+              </li>
+              <li class="hero__logo-item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M2 2H6V6H2V2ZM8 2H12V6H8V2ZM2 8H6V12H2V8ZM8 8H12V12H8V8Z" fill="currentColor" opacity="0.4"/>
+                </svg>
+                Forma Systems
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Scrolling Strip -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip__track">
+        <!-- First copy -->
+        <span class="strip__item"><span class="strip__dot"></span>Machine Learning Systems</span>
+        <span class="strip__item"><span class="strip__dot"></span>Backend Engineering</span>
+        <span class="strip__item"><span class="strip__dot"></span>Cloud Infrastructure</span>
+        <span class="strip__item"><span class="strip__dot"></span>Data Pipelines</span>
+        <span class="strip__item"><span class="strip__dot"></span>API Architecture</span>
+        <span class="strip__item"><span class="strip__dot"></span>DevOps &amp; CI/CD</span>
+        <span class="strip__item"><span class="strip__dot"></span>Real-Time Systems</span>
+        <span class="strip__item"><span class="strip__dot"></span>Custom Software</span>
+        <!-- Second copy (seamless loop) -->
+        <span class="strip__item"><span class="strip__dot"></span>Machine Learning Systems</span>
+        <span class="strip__item"><span class="strip__dot"></span>Backend Engineering</span>
+        <span class="strip__item"><span class="strip__dot"></span>Cloud Infrastructure</span>
+        <span class="strip__item"><span class="strip__dot"></span>Data Pipelines</span>
+        <span class="strip__item"><span class="strip__dot"></span>API Architecture</span>
+        <span class="strip__item"><span class="strip__dot"></span>DevOps &amp; CI/CD</span>
+        <span class="strip__item"><span class="strip__dot"></span>Real-Time Systems</span>
+        <span class="strip__item"><span class="strip__dot"></span>Custom Software</span>
+      </div>
+    </div>
+
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
+    <section class="services" id="services" aria-labelledby="services-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <div class="section-header__inner">
+            <div class="section-header__left">
+              <p class="label section-header__label reveal">What We Build</p>
+              <h2 class="h2 reveal reveal-delay-1" id="services-heading">
+                Engineered for<br/>production scale.
+              </h2>
+            </div>
+            <div class="section-header__right reveal reveal-delay-2">
+              <p class="body-sm">
+                Five service areas. Each one staffed by specialists who have shipped these systems
+                in real environments — not just designed them in theory.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <ul class="services__list" role="list">
+
+          <!-- Service 1: AI & ML -->
+          <li class="service-item reveal">
+            <div class="service__left">
+              <p class="service__number">01</p>
+              <h3 class="h3 service__title">AI &amp; Machine Learning</h3>
+              <p class="body-sm service__desc">
+                From model selection to inference optimization, we build ML systems designed
+                for real throughput — not notebooks. We handle training pipelines, model serving,
+                monitoring, and continuous retraining at production latencies.
+              </p>
+            </div>
+            <div class="service__right">
+              <ul class="service__caps" role="list" aria-label="AI & ML capabilities">
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  LLM fine-tuning &amp; RAG system architecture
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Predictive models: classification, regression, anomaly detection
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  MLOps: experiment tracking, model registry, drift monitoring
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Computer vision pipelines &amp; NLP systems
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  GPU-optimized inference with Triton / vLLM
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Service 2: Custom Software -->
+          <li class="service-item reveal">
+            <div class="service__left">
+              <p class="service__number">02</p>
+              <h3 class="h3 service__title">Custom Software Development</h3>
+              <p class="body-sm service__desc">
+                Full-stack product engineering for teams that need software built correctly
+                from the start. We architect, build, test, and deploy — then hand over
+                clean, documented code your team can own.
+              </p>
+            </div>
+            <div class="service__right">
+              <ul class="service__caps" role="list" aria-label="Custom software capabilities">
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  SaaS platform development (web + mobile)
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Internal tooling &amp; workflow automation
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Architecture design &amp; technical roadmapping
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Code audits &amp; legacy system modernisation
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Service 3: Backend & API -->
+          <li class="service-item reveal">
+            <div class="service__left">
+              <p class="service__number">03</p>
+              <h3 class="h3 service__title">Backend &amp; API Development</h3>
+              <p class="body-sm service__desc">
+                High-throughput API systems designed around your data model — not around
+                a framework's opinions. We build for correctness, observability, and
+                the team that will debug it at 2 AM.
+              </p>
+            </div>
+            <div class="service__right">
+              <ul class="service__caps" role="list" aria-label="Backend & API capabilities">
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  REST &amp; GraphQL API design, versioning strategy
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Microservices &amp; event-driven architecture
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Real-time systems with WebSockets &amp; message queues
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Authentication, rate-limiting, and security hardening
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Service 4: Cloud & DevOps -->
+          <li class="service-item reveal">
+            <div class="service__left">
+              <p class="service__number">04</p>
+              <h3 class="h3 service__title">Cloud &amp; DevOps</h3>
+              <p class="body-sm service__desc">
+                Infrastructure that disappears into the background — resilient, observable,
+                and exactly as complex as it needs to be. We set up environments
+                your team can operate without a dedicated platform engineer.
+              </p>
+            </div>
+            <div class="service__right">
+              <ul class="service__caps" role="list" aria-label="Cloud & DevOps capabilities">
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  AWS / GCP / Azure architecture &amp; cost optimisation
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  CI/CD pipelines, GitOps, zero-downtime deployments
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Kubernetes cluster setup &amp; Helm charts
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Observability: tracing, alerting, SLO dashboards
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Service 5: Data Engineering -->
+          <li class="service-item reveal">
+            <div class="service__left">
+              <p class="service__number">05</p>
+              <h3 class="h3 service__title">Data Engineering &amp; Automation</h3>
+              <p class="body-sm service__desc">
+                Data infrastructure that makes your analytics team independent — and your
+                ML team unblocked. We build the pipes that move, transform, and store
+                data at whatever volume you're dealing with.
+              </p>
+            </div>
+            <div class="service__right">
+              <ul class="service__caps" role="list" aria-label="Data engineering capabilities">
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  ETL / ELT pipelines with Airflow, dbt, Spark
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Data warehouse design (Snowflake, BigQuery, Redshift)
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Streaming data with Kafka &amp; Flink
+                </li>
+                <li class="service__cap">
+                  <span class="service__cap-icon" aria-hidden="true">
+                    <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Business process automation &amp; workflow orchestration
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WHY CHOOSE US
+         ============================================ -->
+    <section class="why" id="about" aria-labelledby="why-heading">
+      <div class="why__bg-accent" aria-hidden="true"></div>
+      <div class="container">
+        <div class="why__grid">
+
+          <!-- Left Column -->
+          <div class="why__left">
+            <p class="label reveal">Why Snapwork</p>
+            <h2 class="h2 reveal reveal-delay-1" id="why-heading">
+              Engineering depth,<br/>not just headcount.
+            </h2>
+            <p class="body-lg why__intro-text reveal reveal-delay-2">
+              Most agencies optimise for hours billed. We optimise for systems that don't
+              wake you up at 3 AM. Our engineers have built at scale — in production —
+              and that experience shapes every architecture decision we make.
+            </p>
+            <div class="why__stat-row reveal reveal-delay-3">
+              <div class="why__stat">
+                <div class="why__stat-number">40+</div>
+                <div class="why__stat-label">Production systems shipped</div>
+              </div>
+              <div class="why__stat">
+                <div class="why__stat-number">8</div>
+                <div class="why__stat-label">Years average eng experience</div>
+              </div>
+              <div class="why__stat">
+                <div class="why__stat-number">99.7%</div>
+                <div class="why__stat-label">Uptime across client deployments</div>
+              </div>
+              <div class="why__stat">
+                <div class="why__stat-number">3×</div>
+                <div class="why__stat-label">Average execution speed vs. in-house</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="why__right">
+            <article class="why__point reveal">
+              <h3 class="why__point-title">We write the same code whether or not you're watching.</h3>
+              <p class="why__point-desc">
+                No spaghetti for demos, no tech debt handed off quietly. Every codebase ships
+                with tests, documentation, and a runbook. Your team takes over without a
+                two-week offboarding call.
+              </p>
+            </article>
+
+            <article class="why__point reveal reveal-delay-1">
+              <h3 class="why__point-title">Specialists, not a single full-stack generalist.</h3>
+              <p class="why__point-desc">
+                ML work is handled by engineers who've trained models on real datasets.
+                Infrastructure is set up by people who've debugged production clusters at 2 AM.
+                The right specialist for each layer of your stack.
+              </p>
+            </article>
+
+            <article class="why__point reveal reveal-delay-2">
+              <h3 class="why__point-title">We challenge the brief before we start building.</h3>
+              <p class="why__point-desc">
+                If the architecture you've sketched will cause problems at scale, we'll say so
+                in week one — not month six. You're hiring us for judgment, not just execution.
+              </p>
+            </article>
+
+            <article class="why__point reveal reveal-delay-3">
+              <h3 class="why__point-title">Fixed-scope engagements with clear deliverables.</h3>
+              <p class="why__point-desc">
+                No open-ended retainers with unclear output. Each engagement has a defined scope,
+                timeline, and acceptance criteria. You know what you're getting before work begins.
+              </p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PROCESS SECTION
+         ============================================ -->
+    <section class="process" id="process" aria-labelledby="process-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <div class="section-header__inner">
+            <div class="section-header__left">
+              <p class="label section-header__label reveal">Delivery Model</p>
+              <h2 class="h2 reveal reveal-delay-1" id="process-heading">
+                How we work.
+              </h2>
+            </div>
+            <div class="section-header__right reveal reveal-delay-2">
+              <p class="body-sm">
+                Four phases, zero ambiguity. Each step has a defined output and a
+                clear handoff before the next one starts.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <ol class="process__timeline" role="list">
+
+          <li class="process__step reveal">
+            <div class="process__step-num" aria-hidden="true">01</div>
+            <div class="process__step-content">
+              <p class="process__step-tag">Discover</p>
+              <h3 class="process__step-title">Technical deep dive</h3>
+              <p class="process__step-desc">
+                We review your existing stack, understand your data flows, and identify
+                constraints before writing a single line of code. Output: a written
+                architecture proposal you can take elsewhere if needed.
+              </p>
+            </div>
+          </li>
+
+          <li class="process__step reveal reveal-delay-1">
+            <div class="process__step-num" aria-hidden="true">02</div>
+            <div class="process__step-content">
+              <p class="process__step-tag">Design</p>
+              <h3 class="process__step-title">System architecture</h3>
+              <p class="process__step-desc">
+                Data models, service boundaries, API contracts, infra diagrams — all
+                agreed upon before build starts. We don't improvise architecture mid-sprint.
+              </p>
+            </div>
+          </li>
+
+          <li class="process__step reveal reveal-delay-2">
+            <div class="process__step-num" aria-hidden="true">03</div>
+            <div class="process__step-content">
+              <p class="process__step-tag">Build</p>
+              <h3 class="process__step-title">Iterative delivery</h3>
+              <p class="process__step-desc">
+                Two-week sprints with shippable increments. You see real progress, not
+                status updates. Each sprint closes with a demo and a decision on what's next.
+              </p>
+            </div>
+          </li>
+
+          <li class="process__step reveal reveal-delay-3">
+            <div class="process__step-num" aria-hidden="true">04</div>
+            <div class="process__step-content">
+              <p class="process__step-tag">Scale</p>
+              <h3 class="process__step-title">Production handoff</h3>
+              <p class="process__step-desc">
+                Load testing, runbook creation, monitoring setup, and a structured handoff.
+                Optional ongoing support contracts for teams who want us on call.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TECH STACK
+         ============================================ -->
+    <section class="tech" aria-label="Technologies we use">
+      <div class="container">
+        <div class="tech__inner">
+          <p class="label tech__label">Stack</p>
+          <ul class="tech__pills" role="list">
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#3776AB"></span>Python</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#38BDF8"></span>TypeScript</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#F97316"></span>Rust</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#00ACD7"></span>Go</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#326CE5"></span>Kubernetes</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#FF9900"></span>AWS</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#4285F4"></span>GCP</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#EB844A"></span>Terraform</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#E84142"></span>Kafka</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#C0392B"></span>PyTorch</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#764ABC"></span>PostgreSQL</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#1DB954"></span>dbt</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#6C63FF"></span>Airflow</li>
+            <li class="tech__pill"><span class="tech__pill-dot" style="background:#41B883"></span>FastAPI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CASE STUDY
+         ============================================ -->
+    <section class="case-study" id="results" aria-labelledby="case-study-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <div class="section-header__inner">
+            <div class="section-header__left">
+              <p class="label section-header__label reveal">Case Study</p>
+              <h2 class="h2 reveal reveal-delay-1" id="case-study-heading">
+                What shipped<br/>looks like.
+              </h2>
+            </div>
+            <div class="section-header__right reveal reveal-delay-2">
+              <p class="body-sm">
+                One real project. The problem we were handed, the decisions we made,
+                and the numbers at the end.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <div class="case-study__card reveal">
+
+          <header class="case-study__header">
+            <div>
+              <span class="case-study__meta-tag">AI &amp; Data Engineering</span>
+              <h3 class="h3 case-study__title" id="case-study-heading">
+                Real-time risk scoring engine for a fintech lending platform
+              </h3>
+            </div>
+            <div class="case-study__client" aria-label="Client information">
+              <p class="case-study__client-name">Kova Finance</p>
+              <p class="case-study__client-meta">Series A · 40-person team</p>
+            </div>
+          </header>
+
+          <div class="case-study__body" role="group" aria-label="Case study details">
+            <div class="case-study__col">
+              <p class="case-study__col-label">The Problem</p>
+              <p class="case-study__col-text">
+                Kova's underwriting team was running credit risk decisions through a
+                <strong>rule-based engine with 17 hand-coded conditions</strong>. It
+                had a 34% false-positive rate on high-risk loans and required manual
+                review for 60% of applications — creating a 48-hour approval window
+                that was killing conversion.
+              </p>
+            </div>
+            <div class="case-study__col">
+              <p class="case-study__col-label">What We Built</p>
+              <p class="case-study__col-text">
+                A <strong>gradient-boosted risk model</strong> trained on 3 years of
+                repayment history, served via a low-latency FastAPI service at p99 &lt; 80ms.
+                Feature engineering pipeline in dbt, real-time inference with ONNX, and a
+                <strong>shadow-mode deployment</strong> running alongside the legacy system
+                for four weeks before cutover.
+              </p>
+            </div>
+            <div class="case-study__col">
+              <p class="case-study__col-label">What Changed</p>
+              <p class="case-study__col-text">
+                Manual review queue dropped by <strong>73%</strong>. Approval time went
+                from 48 hours to under 4 minutes for 91% of applications.
+                The model runs on a single c6i.xlarge instance at
+                <strong>$310/month</strong>, replacing an outsourced bureau check
+                costing $28 per query.
+              </p>
+            </div>
+          </div>
+
+          <footer class="case-study__metrics" aria-label="Key results">
+            <div class="case-study__metric">
+              <div class="case-study__metric-value"><span>73</span>%</div>
+              <div class="case-study__metric-label">Reduction in manual review queue</div>
+            </div>
+            <div class="case-study__metric">
+              <div class="case-study__metric-value"><span>48h</span><span style="font-size:26px;"> → 4m</span></div>
+              <div class="case-study__metric-label">Approval time for 91% of applications</div>
+            </div>
+            <div class="case-study__metric">
+              <div class="case-study__metric-value"><span>$310</span></div>
+              <div class="case-study__metric-label">Monthly infra cost vs ~$28/query bureau fees</div>
+            </div>
+            <div class="case-study__metric">
+              <div class="case-study__metric-value"><span>11</span>wk</div>
+              <div class="case-study__metric-label">Discovery to production deployment</div>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="/" class="nav__logo" aria-label="Snapwork home">
+            <span class="nav__logo-text">Snap<span style="color:var(--accent)">work</span></span>
+          </a>
+          <p class="footer__brand-desc">
+            A software engineering firm specialising in AI systems, backend infrastructure,
+            and data engineering for product companies.
+          </p>
+
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Services</h3>
+          <nav class="footer__links" aria-label="Services">
+            <a href="#services">AI &amp; Machine Learning</a>
+            <a href="#services">Custom Software</a>
+            <a href="#services">Backend &amp; API</a>
+            <a href="#services">Cloud &amp; DevOps</a>
+            <a href="#services">Data Engineering</a>
+          </nav>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Company</h3>
+          <nav class="footer__links" aria-label="Company">
+            <a href="#about">About</a>
+            <a href="#process">How We Work</a>
+            <a href="#results">Case Studies</a>
+            <a href="#">Careers</a>
+          </nav>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Legal</h3>
+          <nav class="footer__links" aria-label="Legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Security</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; 2026 Snapwork Inc. All rights reserved.
+        </p>
+        <nav class="footer__socials" aria-label="Social links">
+          <a href="#" class="footer__social" aria-label="Snapwork on LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Snapwork on GitHub">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Snapwork on Twitter / X">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
